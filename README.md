@@ -8,6 +8,9 @@ This folder is the first Git-managed control repository for the local AI brain.
 
 - Git scope and ignore rules: `docs/git-management-plan.md`
 - Main workstream registry: `docs/main-work-registry.md`
+- Release safety checklist: `docs/release-checklist.md`
+- GitHub templates: `.github/ISSUE_TEMPLATE/` and `.github/pull_request_template.md`
+- Local environment example: `.env.example`
 - Generated run reports under `runs/` are ignored by default.
 - Commit/push should only happen after explicit user approval.
 
@@ -32,6 +35,12 @@ Architecture:
 - Task-end review template lives in `config/task-review-template.md`.
 
 The MVP uses a local `.venv` with LangChain/LangGraph and the existing CDS scripts. CDS remains the long-term memory backend.
+
+Local path defaults can be overridden without editing source code:
+
+- `CODEX_MEMORY_DB`: CDS SQLite index path
+- `CODEX_CDS_SCRIPTS`: CDS command script directory
+- `CODEX_BRAIN_PYTHON`: Python executable used by local status tools
 
 ## Prompt Replacement
 

@@ -15,6 +15,7 @@ brain_status.md
 # Local secrets and machine-specific config
 .env
 .env.*
+!.env.example
 *.key
 *.pem
 *.p12

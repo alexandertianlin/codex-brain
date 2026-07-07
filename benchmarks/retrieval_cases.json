@@ -22,6 +22,15 @@
     "forbidden_packs": ["Product and Taste Review", "NTU SPML Project Knowledge"]
   },
   {
+    "name": "architecture-github-ci-no-project-c-memory",
+    "task": "codex-brain GitHub CI upgrade verification: environment variable path config, pytest smoke tests, release checklist, GitHub templates, no secrets, no push",
+    "expected_domain_contains": ["architecture"],
+    "expected_packs": ["Core DMS/CDS Memory", "Codex Brain Architecture"],
+    "forbidden_packs": ["NTU SPML Project Knowledge"],
+    "expected_memory_ids_any": [41, 56, 59, 89],
+    "forbidden_used_memory_ids": [29, 34, 73]
+  },
+  {
     "name": "nuwa-skill-routing",
     "task": "加载女娲skill，帮我造一个乔布斯视角的 perspective skill",
     "expected_domain_contains": ["skill-synthesis"],

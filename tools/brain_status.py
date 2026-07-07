@@ -3,11 +3,10 @@ from __future__ import annotations
 import json
 import sqlite3
 import subprocess
-from pathlib import Path
 
+from tools.paths import ROOT, brain_python, cds_memory_db
 
-ROOT = Path(__file__).resolve().parents[1]
-MEMORY_DB = Path(r"D:\agiletact\codex-memory\index\memory.sqlite")
+MEMORY_DB = cds_memory_db()
 
 
 def build_status() -> str:
@@ -47,7 +46,7 @@ def _memory_summary() -> list[str]:
 def _benchmark_summary() -> list[str]:
     try:
         proc = subprocess.run(
-            [str(ROOT / ".venv" / "Scripts" / "python.exe"), str(ROOT / "tools" / "run_retrieval_benchmark.py"), "--json"],
+            [str(brain_python()), str(ROOT / "tools" / "run_retrieval_benchmark.py"), "--json"],
             cwd=str(ROOT),
             text=True,
             capture_output=True,

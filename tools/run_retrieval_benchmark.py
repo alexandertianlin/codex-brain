@@ -42,6 +42,7 @@ def run_case(case: dict) -> dict:
     pack_names = {pack["name"] for pack in result.get("knowledge_packs", [])}
     lens_names = set(result.get("spml_lenses", []))
     memory_ids = {memory["id"] for memory in result.get("memories", [])}
+    used_memory_ids = set(result.get("used_memory_ids", []))
 
     for expected in case.get("expected_domain_contains", []):
         if expected not in domain_text:
@@ -58,6 +59,10 @@ def run_case(case: dict) -> dict:
     expected_memory_ids_any = set(case.get("expected_memory_ids_any", []))
     if expected_memory_ids_any and not (expected_memory_ids_any & memory_ids):
         failures.append(f"none of expected memories {sorted(expected_memory_ids_any)} found; got {sorted(memory_ids)}")
+    forbidden_memory_ids = set(case.get("forbidden_used_memory_ids", []))
+    forbidden_found = forbidden_memory_ids & used_memory_ids
+    if forbidden_found:
+        failures.append(f"forbidden memories marked used {sorted(forbidden_found)}")
     return {
         "name": case["name"],
         "pass": not failures,
@@ -66,6 +71,7 @@ def run_case(case: dict) -> dict:
         "packs": sorted(pack_names),
         "lenses": sorted(lens_names),
         "memory_ids": sorted(memory_ids),
+        "used_memory_ids": sorted(used_memory_ids),
         "evaluation": result.get("evaluation", {}),
     }
 

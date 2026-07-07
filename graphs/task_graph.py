@@ -481,7 +481,12 @@ def _score_memory(memory: cds_tool.Memory, route: dict, packs: list[dict], profi
             "memory-quality", "memory quality", "retrieval-feedback", "retrieval feedback",
             "memory priority", "feedback table", "routing", "knowledge router",
         ]
-        demote = ["hamer", "vitpose", "bbox", "d435i", "v9.", "unity imu", "provider channel", "deepseek", "allrealai", "api key", "onlytip-2.3"]
+        demote = [
+            "hamer", "vitpose", "bbox", "d435i", "v9.", "unity imu",
+            "serialreceiver", "handmotionmanager", "palm", "0x0a", "glove",
+            "tactile", "provider channel", "deepseek", "allrealai", "api key",
+            "onlytip", "onlytip-2.3",
+        ]
         value += sum(12 for term in keywords if term in haystack)
         value -= sum(14 for term in demote if term in haystack)
     elif "nuwa skill synthesis" in pack_text:

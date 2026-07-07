@@ -3,10 +3,10 @@ from __future__ import annotations
 import re
 import subprocess
 from dataclasses import dataclass
-from pathlib import Path
 
+from tools.paths import cds_scripts_dir
 
-CDS_DIR = Path(r"C:\Users\user\.codex\skills\cds\scripts")
+CDS_DIR = cds_scripts_dir()
 RETRIEVE_CMD = CDS_DIR / "retrieve.cmd"
 FEEDBACK_CMD = CDS_DIR / "feedback.cmd"
 CDS_CMD = CDS_DIR / "cds.cmd"

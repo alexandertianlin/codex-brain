@@ -1,0 +1,30 @@
+name: codex-brain-ci
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  verify:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Compile Python files
+        run: python -m compileall app.py graphs tools tests
+
+      - name: Run retrieval benchmark
+        run: python tools\run_retrieval_benchmark.py
+
+      - name: Run smoke tests
+        run: pytest -q

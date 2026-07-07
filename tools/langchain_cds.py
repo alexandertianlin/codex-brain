@@ -1,7 +1,8 @@
 from __future__ import annotations
 
 import sqlite3
-from pathlib import Path
+
+from tools.paths import cds_memory_db
 
 try:
     from langchain_core.documents import Document
@@ -9,7 +10,7 @@ except Exception:  # pragma: no cover - fallback for environments without LangCh
     Document = None  # type: ignore
 
 
-CDS_DB = Path(r"D:\agiletact\codex-memory\index\memory.sqlite")
+CDS_DB = cds_memory_db()
 
 
 def load_cds_documents(limit: int | None = None):
