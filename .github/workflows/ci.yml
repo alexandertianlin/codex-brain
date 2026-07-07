@@ -23,6 +23,9 @@ jobs:
       - name: Compile Python files
         run: python -m compileall app.py graphs tools tests
 
+      - name: Run privacy audit
+        run: python tools\privacy_audit.py
+
       - name: Run retrieval benchmark
         run: python tools\run_retrieval_benchmark.py
 

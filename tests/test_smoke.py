@@ -45,6 +45,14 @@ def test_nuwa_skill_synthesis_pack_selected():
     assert result["task_profile"]["objective"] == "route-nuwa-skill-synthesis"
 
 
+def test_nuwa_analysis_lens_does_not_force_skill_synthesis():
+    result = run_task_graph("load Nuwa skill as an analysis lens and audit codex-brain GitHub privacy issues", write_feedback=False)
+    names = {pack["name"] for pack in result["knowledge_packs"]}
+    assert "Codex Brain Architecture" in names
+    assert "Nuwa Skill Synthesis" not in names
+    assert "skill-synthesis" not in result["route"]["matched_domains"]
+
+
 def test_architecture_does_not_select_product_pack_without_ui():
     result = run_task_graph("codex-brain architecture evaluator memory update planner benchmark", write_feedback=False)
     names = {pack["name"] for pack in result["knowledge_packs"]}

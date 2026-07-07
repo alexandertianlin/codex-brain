@@ -2,7 +2,7 @@ name: protected-baselines
 baselines:
   - id: onlytip-2.2
     name: onlytip 2.2 stable Unity baseline
-    path: D:\agiletact\onlytip - 2.2-mediapipe
+    path: ${PROJECT_C_ONLYTIP_2_2}
     terms:
       - onlytip 2.2
       - 2.2-mediapipe
@@ -10,7 +10,7 @@ baselines:
     protect: Never edit directly unless the user explicitly asks to modify 2.2; prefer copy-first experiments.
   - id: hamer-v9.9
     name: HaMeR v9.9 static jitter guard baseline
-    path: D:\agiletact\247-sandbox\onlytip-2.3-vitpose-trackA\hamer_official_keypoints_v99_static_jitter_guard.py
+    path: ${PROJECT_C_TRACK_A}\hamer_official_keypoints_v99_static_jitter_guard.py
     terms:
       - v9.9
       - v99
@@ -18,7 +18,7 @@ baselines:
     protect: Do not overwrite; copy to a new version for experiments.
   - id: hamer-v9.12
     name: HaMeR v9.12 HaGRID hand bbox baseline
-    path: D:\agiletact\247-sandbox\onlytip-2.3-vitpose-trackA\hamer_official_keypoints_v912_hagrid_hand_bbox.py
+    path: ${PROJECT_C_TRACK_A}\hamer_official_keypoints_v912_hagrid_hand_bbox.py
     terms:
       - v9.12
       - v912
@@ -26,7 +26,7 @@ baselines:
     protect: Do not overwrite; use as a detector comparison baseline.
   - id: hamer-v9.13
     name: HaMeR v9.13 HaGRID + ViTPose refine baseline
-    path: D:\agiletact\247-sandbox\onlytip-2.3-vitpose-trackA\hamer_official_keypoints_v913_hagrid_vitpose_refine.py
+    path: ${PROJECT_C_TRACK_A}\hamer_official_keypoints_v913_hagrid_vitpose_refine.py
     terms:
       - v9.13
       - v913
@@ -34,7 +34,7 @@ baselines:
     protect: Do not overwrite; use as current detector-refine baseline.
   - id: onlytip-3.4
     name: onlytip 3.4 OpenVINS-style fusion baseline
-    path: D:\agiletact\onlytip - 3.4-vio-style-fusion
+    path: ${PROJECT_C_FUSION_MAINLINE}
     terms:
       - 3.4-vio-style-fusion
       - openvins-style

@@ -45,6 +45,13 @@
     "forbidden_packs": ["NTU SPML Project Knowledge"]
   },
   {
+    "name": "nuwa-analysis-lens-not-synthesis",
+    "task": "load Nuwa skill as an analysis lens and audit codex-brain GitHub public privacy issues",
+    "expected_domain_contains": ["architecture"],
+    "expected_packs": ["Core DMS/CDS Memory", "Codex Brain Architecture"],
+    "forbidden_packs": ["Nuwa Skill Synthesis", "NTU SPML Project Knowledge"]
+  },
+  {
     "name": "unity-imu-tactile-mapping",
     "task": "Unity IMU tactile COM port finger mapping wrong, protect onlytip 2.2 stable baseline",
     "expected_domain_contains": ["unity-hardware"],

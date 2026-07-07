@@ -40,7 +40,7 @@ Do not track:
 
 Current status:
 
-- Local repository exists at `D:\agiletact\codex-brain`.
+- Local repository exists at `<CODEX_BRAIN_ROOT>`.
 - First local commit exists: `40ec309 Initialize codex-brain git management`.
 - No remote is configured yet.
 - `https://github.com/alexandertianlin/codex-brain.git` was checked on 2026-07-07 and returned `Repository not found`.

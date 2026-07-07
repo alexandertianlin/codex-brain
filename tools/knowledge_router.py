@@ -63,7 +63,7 @@ def _infer_domains(text: str, route: dict) -> set[str]:
         domains.add("media-transcription")
     if _has_pack_terms(text, "Risk and Decision Audit"):
         domains.add("risk")
-    if _has_pack_terms(text, "Nuwa Skill Synthesis"):
+    if _mentions_nuwa_skill_synthesis(text):
         domains.add("skill-synthesis")
     if not domains:
         domains.add("general")
@@ -152,6 +152,17 @@ def _mentions_product_experience_context(text: str) -> bool:
         "user experience", "landing page", "界面", "交互", "用户体验", "工作台", "仪表盘",
     }
     return _has_any(text, exact_terms)
+
+
+def _mentions_nuwa_skill_synthesis(text: str) -> bool:
+    creation_terms = {
+        "create", "make", "build", "generate", "update", "refresh",
+        "造", "蒸馏", "更新", "生成", "创建",
+        "é€ ", "è’¸é¦", "æ›´æ–°", "ç”Ÿæˆ", "åˆ›å»º",
+        "é€ skill", "é€  skill", "é€ äºº", "skill synthesis",
+    }
+    context_terms = {"nuwa", "女娲", "perspective", "人物skill", "人物 skill", "å¥³å¨²", "äººç‰©skill", "äººç‰© skill"}
+    return _has_any(text, creation_terms) and _has_any(text, context_terms)
 
 
 def _normalize_pack(pack: dict) -> dict:

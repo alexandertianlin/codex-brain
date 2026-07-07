@@ -15,7 +15,7 @@ This folder is the first Git-managed control repository for the local AI brain.
 - Commit/push should only happen after explicit user approval.
 
 ```cmd
-cd /d D:\agiletact\codex-brain
+cd /d <CODEX_BRAIN_ROOT>
 run.cmd "HaMeR bbox太小，识别慢，怎么解决"
 ```
 
@@ -29,7 +29,7 @@ Architecture:
 - LangChain bridge: `tools/langchain_cds.py` loads CDS SQLite memories as LangChain `Document` objects
 - Knowledge packs live in `knowledge-packs/*.yml` instead of hard-coded Python lists.
 - Retrieval benchmark cases live in `benchmarks/retrieval_cases.json`.
-- Nuwa routing is represented by `knowledge-packs/nuwa-skill-synthesis.yml`; the full skill-creation workflow remains in `C:\Users\user\.codex\skills\nuwa-skill`.
+- Nuwa routing is represented by `knowledge-packs/nuwa-skill-synthesis.yml`; the full skill-creation workflow remains in the local Codex skills directory.
 - Protected baselines live in `config/protected-baselines.yml`.
 - Provider/API diagnosis uses `knowledge-packs/provider-health.yml` and `tools/provider_health.py`.
 - Task-end review template lives in `config/task-review-template.md`.
@@ -78,41 +78,41 @@ Project C / 工程：
 Check the LangChain bridge:
 
 ```cmd
-cd /d D:\agiletact\codex-brain
+cd /d <CODEX_BRAIN_ROOT>
 .venv\Scripts\python.exe tools\langchain_cds.py
 ```
 
 Run retrieval benchmark:
 
 ```cmd
-cd /d D:\agiletact\codex-brain
+cd /d <CODEX_BRAIN_ROOT>
 .venv\Scripts\python.exe tools\run_retrieval_benchmark.py
 ```
 
 Generate status dashboard:
 
 ```cmd
-cd /d D:\agiletact\codex-brain
+cd /d <CODEX_BRAIN_ROOT>
 .venv\Scripts\python.exe tools\brain_status.py
 ```
 
 Check provider health without exposing API keys:
 
 ```cmd
-cd /d D:\agiletact\codex-brain
+cd /d <CODEX_BRAIN_ROOT>
 .venv\Scripts\python.exe tools\provider_health.py
 ```
 
 Run a no-feedback architecture check:
 
 ```cmd
-cd /d D:\agiletact\codex-brain
+cd /d <CODEX_BRAIN_ROOT>
 run.cmd "upgrade codex-brain knowledge routing memory feedback" --no-feedback
 ```
 
 Run a Nuwa routing check:
 
 ```cmd
-cd /d D:\agiletact\codex-brain
+cd /d <CODEX_BRAIN_ROOT>
 run.cmd "加载女娲skill，帮我造一个乔布斯视角的 perspective skill" --no-feedback
 ```

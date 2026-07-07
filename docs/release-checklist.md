@@ -14,8 +14,9 @@ Use this checklist before tagging, pushing, or publishing `codex-brain`.
 Run:
 
 ```cmd
-cd /d D:\agiletact\codex-brain
+cd /d <CODEX_BRAIN_ROOT>
 python -m compileall app.py graphs tools tests
+python tools\privacy_audit.py
 .venv\Scripts\python.exe tools\run_retrieval_benchmark.py
 .venv\Scripts\python.exe -m pytest -q
 run.cmd "upgrade codex-brain knowledge routing memory feedback" --no-feedback --no-report
@@ -24,6 +25,7 @@ run.cmd "upgrade codex-brain knowledge routing memory feedback" --no-feedback --
 Expected:
 
 - compileall passes.
+- privacy audit passes.
 - retrieval benchmark passes or known failures are documented.
 - smoke tests pass, or CI-only limitations are documented.
 - architecture task retrieves codex-brain/CDS memories before unrelated project memories.
