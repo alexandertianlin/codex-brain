@@ -36,6 +36,35 @@ Do not track:
    - commit only after explicit user approval.
    - never commit secrets, cookies, large binary assets, or generated run reports.
 
+## Remote Publishing Workflow
+
+Current status:
+
+- Local repository exists at `D:\agiletact\codex-brain`.
+- First local commit exists: `40ec309 Initialize codex-brain git management`.
+- No remote is configured yet.
+- `https://github.com/alexandertianlin/codex-brain.git` was checked on 2026-07-07 and returned `Repository not found`.
+
+Before pushing:
+
+1. Create a private GitHub repository, or provide an existing remote URL.
+2. Confirm the remote name and branch policy, normally:
+   - remote: `origin`
+   - branch: `main`
+3. Re-run safety checks:
+   - `git status --short`
+   - `git log --oneline -1`
+   - `git ls-files`
+   - `python -m compileall app.py graphs tools`
+   - `.venv\Scripts\python.exe tools\run_retrieval_benchmark.py`
+4. Add the remote only after the URL is confirmed:
+   - `git remote add origin <remote-url>`
+5. Push only after explicit approval:
+   - `git branch -M main`
+   - `git push -u origin main`
+
+Do not create or push a public repository until `codex-memory`, run reports, provider settings, and project paths have been reviewed for privacy.
+
 ## Repository Strategy For Main Work
 
 Use separate repositories or separate protected folders for major projects:
