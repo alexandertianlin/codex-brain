@@ -1,0 +1,20 @@
+name: Risk and Decision Audit
+domains:
+  - risk
+  - career
+  - relationship
+  - architecture
+terms:
+  - 风险
+  - 辞职
+  - 机会成本
+  - 黑天鹅
+  - 失败
+  - 放弃
+  - 是否应该
+  - 决策
+  - risk
+  - quit
+  - tradeoff
+query_terms: risk audit opportunity cost downside Taleb Munger decision
+use_for: Use for irreversible decisions, downside protection, and opportunity-cost checks.

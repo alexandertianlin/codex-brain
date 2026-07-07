@@ -1,0 +1,6 @@
+name: Core DMS/CDS Memory
+domains:
+  - all
+terms: []
+query_terms: DMS CDS retrieval feedback domain scope task memory
+use_for: Always load as the operating memory and task-control base.

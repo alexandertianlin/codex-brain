@@ -1,0 +1,24 @@
+name: Codex Brain Architecture
+domains:
+  - architecture
+  - memory-quality
+  - rag
+  - workflow
+terms:
+  - codex-brain
+  - codex brain
+  - langgraph
+  - langchain
+  - rag
+  - knowledge base
+  - router
+  - routing
+  - architecture
+  - memory
+  - 知识库
+  - 路由
+  - 架构
+  - 本地ai大脑
+  - 本地 ai 大脑
+query_terms: codex-brain LangGraph LangChain DMS CDS architecture RAG memory-quality routing
+use_for: Use for AI-brain architecture, memory quality, workflow routing, and prompt replacement.

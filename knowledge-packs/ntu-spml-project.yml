@@ -1,0 +1,29 @@
+name: NTU SPML Project Knowledge
+domains:
+  - vision
+  - unity-hardware
+  - fusion
+  - runtime
+  - planning
+terms:
+  - spml
+  - ntu
+  - hamer
+  - vitpose
+  - d435i
+  - imu
+  - unity
+  - tactile
+  - ekf
+  - kalman
+  - bbox
+  - keypoint
+  - 传感器
+  - 视觉
+  - 手套
+  - 触觉
+  - 融合
+  - 时间戳
+  - 回放
+query_terms: NTU SPML Machine Vision DSP Robotics Sensors HaMeR ViTPose Unity IMU fusion
+use_for: Use for Project C, hand tracking, sensor fusion, Unity replay, and SPML course-linked engineering.

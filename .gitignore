@@ -1,0 +1,58 @@
+# Python / local runtime
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Codex Brain generated run artifacts
+runs/*
+!runs/.gitkeep
+brain_status.md
+
+# Local secrets and machine-specific config
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+credentials/
+cookies.txt
+*.cookies.txt
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+Thumbs.db
+Desktop.ini
+
+# Large model/data/media artifacts
+*.pkl
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.safetensors
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.wav
+*.mp3
+*.zip
+*.7z
+*.rar
+
+# Do not vendor project outputs into codex-brain
+outputs/
+artifacts/
+cache/
+data/
+datasets/

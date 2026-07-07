@@ -1,0 +1,34 @@
+name: Media Transcription Pipeline
+domains:
+  - media-transcription
+terms:
+  - douyin
+  - tiktok
+  - youtube
+  - yt-dlp
+  - ytdlp
+  - whisper
+  - faster-whisper
+  - ffmpeg
+  - subtitle
+  - subtitles
+  - transcript
+  - transcription
+  - asr
+  - cookies
+  - cookies.txt
+  - cookies-from-browser
+  - audio extraction
+  - video download
+  - srt
+  - vtt
+  - douyin-transcript-tool
+  - 抖音
+  - 字幕
+  - 音频
+  - 转写
+  - 文字稿
+  - 提取音频
+  - 提取字幕
+query_terms: Douyin TikTok yt-dlp cookies ffmpeg faster-whisper ASR subtitle transcript local video fallback media-transcription
+use_for: Use for downloading or processing online/local videos into subtitles, audio, transcripts, SRT/VTT/TXT, and ASR outputs.

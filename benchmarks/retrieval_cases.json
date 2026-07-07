@@ -1,0 +1,147 @@
+[
+  {
+    "name": "media-douyin-transcript",
+    "task": "Douyin video audio subtitle transcript extraction with yt-dlp ffmpeg faster-whisper cookies local fallback",
+    "expected_domain_contains": ["media-transcription"],
+    "expected_packs": ["Core DMS/CDS Memory", "Media Transcription Pipeline"],
+    "forbidden_packs": ["NTU SPML Project Knowledge"]
+  },
+  {
+    "name": "architecture-memory-quality",
+    "task": "upgrade codex-brain knowledge routing memory feedback",
+    "expected_domain_contains": ["architecture", "memory-quality"],
+    "expected_packs": ["Core DMS/CDS Memory", "Codex Brain Architecture"],
+    "forbidden_packs": ["NTU SPML Project Knowledge", "Product and Taste Review"],
+    "expected_memory_ids_any": [59, 41, 56, 10, 39]
+  },
+  {
+    "name": "architecture-no-product-pack",
+    "task": "codex-brain architecture maintenance: evaluator node memory update planner benchmark routing",
+    "expected_domain_contains": ["architecture", "memory-quality"],
+    "expected_packs": ["Core DMS/CDS Memory", "Codex Brain Architecture"],
+    "forbidden_packs": ["Product and Taste Review", "NTU SPML Project Knowledge"]
+  },
+  {
+    "name": "nuwa-skill-routing",
+    "task": "加载女娲skill，帮我造一个乔布斯视角的 perspective skill",
+    "expected_domain_contains": ["skill-synthesis"],
+    "expected_packs": ["Core DMS/CDS Memory", "Nuwa Skill Synthesis"],
+    "forbidden_packs": ["NTU SPML Project Knowledge"]
+  },
+  {
+    "name": "nuwa-update-existing-skill",
+    "task": "更新费曼 perspective skill，检查思维框架和表达DNA是否需要补充",
+    "expected_domain_contains": ["skill-synthesis"],
+    "expected_packs": ["Core DMS/CDS Memory", "Nuwa Skill Synthesis"],
+    "forbidden_packs": ["NTU SPML Project Knowledge"]
+  },
+  {
+    "name": "unity-imu-tactile-mapping",
+    "task": "Unity IMU tactile COM port finger mapping wrong, protect onlytip 2.2 stable baseline",
+    "expected_domain_contains": ["unity-hardware"],
+    "expected_packs": ["Core DMS/CDS Memory", "NTU SPML Project Knowledge"],
+    "expected_memory_ids_any": [68, 51, 30]
+  },
+  {
+    "name": "unity-palm-missing",
+    "task": "onlytip Unity COM4 palm 0x0A missing, fingers have IMU but hand palm no signal",
+    "expected_domain_contains": ["unity-hardware"],
+    "expected_packs": ["Core DMS/CDS Memory", "NTU SPML Project Knowledge"],
+    "expected_memory_ids_any": [29, 68, 51]
+  },
+  {
+    "name": "fusion-openvins-delayed-bias",
+    "task": "OpenVINS-style EKF adapter and 2.8 delayed vision bias fusion theory why effective",
+    "expected_domain_contains": ["fusion"],
+    "expected_packs": ["Core DMS/CDS Memory", "NTU SPML Project Knowledge"],
+    "expected_memory_ids_any": [33, 48, 38]
+  },
+  {
+    "name": "factor-graph-not-mainline",
+    "task": "factor graph fusion branch should it be mainline or experiment compared with OpenVINS EKF",
+    "expected_domain_contains": ["fusion"],
+    "expected_packs": ["Core DMS/CDS Memory", "NTU SPML Project Knowledge"],
+    "expected_memory_ids_any": [32, 33, 48]
+  },
+  {
+    "name": "vision-hamer-bbox-jitter",
+    "task": "HaMeR bbox too small, D435i realtime recognition slow and jitter, how to fix",
+    "expected_domain_contains": ["vision"],
+    "expected_packs": ["Core DMS/CDS Memory", "NTU SPML Project Knowledge"],
+    "expected_lenses_any": ["Machine Vision", "Real-Time DSP", "Video Analysis"],
+    "expected_memory_ids_any": [73, 58, 45, 55]
+  },
+  {
+    "name": "vision-offline-before-live",
+    "task": "HaMeR 手套图片离线标注测试，不要直接实时摄像头调参",
+    "expected_domain_contains": ["vision"],
+    "expected_packs": ["Core DMS/CDS Memory", "NTU SPML Project Knowledge"],
+    "expected_lenses_any": ["Machine Vision", "Deep Learning"]
+  },
+  {
+    "name": "vision-latency",
+    "task": "D435i realtime hand recognition very slow and laggy, measure latency and fps",
+    "expected_domain_contains": ["vision"],
+    "expected_packs": ["Core DMS/CDS Memory", "NTU SPML Project Knowledge"],
+    "expected_lenses_any": ["Real-Time DSP", "Video Analysis"]
+  },
+  {
+    "name": "onlytip-baseline-protection",
+    "task": "onlytip 2.2 is stable baseline, do not edit directly; create new experiment version",
+    "expected_domain_contains": ["unity-hardware"],
+    "expected_packs": ["Core DMS/CDS Memory", "NTU SPML Project Knowledge"],
+    "expected_memory_ids_any": [34, 30, 68]
+  },
+  {
+    "name": "provider-503",
+    "task": "unexpected status 503 deepseek-chat allrealai no available channel why new task failed",
+    "expected_domain_contains": ["provider-routing"],
+    "expected_packs": ["Core DMS/CDS Memory", "Provider Health Check"],
+    "forbidden_packs": ["NTU SPML Project Knowledge"],
+    "expected_memory_ids_any": [79]
+  },
+  {
+    "name": "detectron2-dependency",
+    "task": "install detectron2 for v9.14 offline 100DOH hand bbox, isolate environment",
+    "expected_domain_contains": ["vision"],
+    "expected_packs": ["Core DMS/CDS Memory", "NTU SPML Project Knowledge"],
+    "expected_lenses_any": ["Machine Vision", "Deep Learning"]
+  },
+  {
+    "name": "ntu-course-plan",
+    "task": "NTU SPML 6427 6483 6497 6102 course timetable and exam planning",
+    "expected_domain_contains": ["planning"],
+    "expected_packs": ["Core DMS/CDS Memory", "NTU SPML Project Knowledge"]
+  },
+  {
+    "name": "relationship-boundary",
+    "task": "我和女朋友相处，从博弈论和边界沟通分析下一步怎么做",
+    "expected_domain_contains": ["relationship"],
+    "expected_packs": ["Core DMS/CDS Memory", "Relationship Game Theory", "Boundary Consent Communication"],
+    "forbidden_packs": ["NTU SPML Project Knowledge"]
+  },
+  {
+    "name": "learning-feynman",
+    "task": "用费曼方法帮我学习 OpenVINS EKF covariance gating，生成面试解释",
+    "expected_domain_contains": ["learning"],
+    "expected_packs": ["Core DMS/CDS Memory", "Learning and Feynman Mastery"]
+  },
+  {
+    "name": "career-planning",
+    "task": "结合我的项目经历规划百万年薪职业路线和面试叙事",
+    "expected_domain_contains": ["career"],
+    "expected_packs": ["Core DMS/CDS Memory", "Career Million-Yuan Track"]
+  },
+  {
+    "name": "risk-decision",
+    "task": "这个实验方案风险很高，帮我做可逆性和机会成本审计",
+    "expected_domain_contains": ["risk"],
+    "expected_packs": ["Core DMS/CDS Memory", "Risk and Decision Audit"]
+  },
+  {
+    "name": "product-ui-dashboard",
+    "task": "给 codex-brain 做本地状态 dashboard UI，优化用户体验",
+    "expected_domain_contains": ["product"],
+    "expected_packs": ["Core DMS/CDS Memory", "Product and Taste Review"]
+  }
+]

@@ -1,0 +1,16 @@
+name: Product and Taste Review
+domains:
+  - product
+terms:
+  - ui
+  - 产品
+  - 工作台
+  - dashboard
+  - 用户
+  - 体验
+  - 设计
+  - 功能
+  - 界面
+  - 交互
+query_terms: product design user workflow Jobs taste interface dashboard
+use_for: Use for product/UI/system experience decisions.

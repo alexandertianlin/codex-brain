@@ -1,0 +1,17 @@
+name: Provider Health Check
+domains:
+  - provider-routing
+  - runtime
+terms:
+  - provider
+  - allrealai
+  - deepseek
+  - openai
+  - api
+  - 503
+  - service unavailable
+  - no available channel
+  - model_provider
+  - base_url
+query_terms: provider routing AllRealAI DeepSeek OpenAI 503 channel model_provider base_url config
+use_for: Use for model/API/provider routing errors before debugging local project code.
